@@ -7,7 +7,7 @@ transit maps show journeys. Every **course is a station**, every **subject area 
 
 > CSCI426 Advanced Web Programming · Project Phase 1 · Fall 2026 · Ali Wehbi
 
-**Live demo:** `https://<your-username>.github.io/studyline/` *(update after deploying)*
+**Live demo:** https://alebanonwhshbs.github.io/Project-Studyline-S3-LIU/
 
 ![Home page](docs/screenshots/home.png)
 
@@ -79,8 +79,8 @@ src/
 Requirements: **Node.js 18+** and npm.
 
 ```bash
-git clone https://github.com/<your-username>/studyline.git
-cd studyline
+git clone https://github.com/alebanonwhshbs/Project-Studyline-S3-LIU.git
+cd Project-Studyline-S3-LIU
 npm install
 npm run dev        # http://localhost:5173
 ```
@@ -94,10 +94,9 @@ npm run preview    # serve the build locally
 
 ## 🌐 Deployment
 
-**GitHub Pages (automatic):** this repo includes `.github/workflows/deploy.yml`.
-1. Push to a GitHub repo on the `main` branch.
-2. Go to **Settings → Pages → Build and deployment → Source** and choose **GitHub Actions**.
-3. Every push to `main` builds and deploys. The URL appears in the Actions run.
+**GitHub Pages (automatic):** `.github/workflows/deploy.yml` builds the app on every push to `main`
+and publishes `dist/` to the `gh-pages` branch, which GitHub Pages serves at
+https://alebanonwhshbs.github.io/Project-Studyline-S3-LIU/
 
 **Netlify / Vercel:** import the repo, build command `npm run build`, output directory `dist`.
 
